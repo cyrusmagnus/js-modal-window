@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="js.ico" type="image/x-icon">
+    <title>js-modal-window</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <section class="section section--1">
+        <a class="js-modal-open link" href="#modal-1"><span>Open 1</span></a>
+        <a class="js-modal-open link" href="#modal-2"><span>Open 2</span></a>
+    </section>
+    <section class="section section--2"></section>
+    <section class="section section--3"></section>
+    <script src="main.js"></script>
+
+    <div class="modal modal--l" id="modal-1">
+        <div class="modal__dialog">
+            <div class="modal__dialog-header">
+                <div class="modal__dialog-header-content">
+                    Window 1
+                </div>
+                <button class="js-modal-close modal__dialog-header-close-btn"><span>&times;</span></button>
+            </div>
+            <div class="modal__dialog-body">
+                <div>modal__dialog-body</div>
+                <button class="js-add-content-temp">add-content-temp</button>
+            </div>
+            <div class="modal__dialog-footer">
+                <button class="js-modal-close btn-close">Close</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal--s" id="modal-2">
+        <div class="modal__dialog">
+            <div class="modal__dialog-header">
+                <div class="modal__dialog-header-content">
+                    Window 2
+                </div>
+                <button class="js-modal-close modal__dialog-header-btn"><span>&times;</span></button>
+            </div>
+            <div class="modal__dialog-body"></div>
+            <div class="modal__dialog-footer">
+                <button class="js-modal-close btn-close">Close</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
